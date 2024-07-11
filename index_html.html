@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <!-- Questo è un commento -->
+<head>
+    <title>File con stile incorporato</title> <!-- Titolo della scheda visualizzato nella tab-->
+    <style> /* Stile incorporato */
+        h1{ /* Modificatore di elementi */
+            background-color: blueviolet;
+        } /* Modifica tutti gli elementi H1 --> Ok modifica di più elementi*/ 
+
+        .titoli{ /* Modificatore di classi */
+            color: aqua;
+        } /* Modifica tutti gli elementi con classe "titoli" --> Ok modifica di più elementi*/ 
+
+        #titolo3{ /* Modificatore di id */ 
+            font-size: 40px;
+        } /* Modifica l'elemento con id "titolo3" --> Modifichi un elemento nello specifico */
+    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Stile esterno-->
+</head>
+<body>
+    <h1>titolo h1</h1> <!--Gerarchia di titoli in HTML che vengono visualizzati nella pagina-->
+    <h2 class="titoli">titolo h2</h2>
+    <h3 id="titolo3">titolo h3</h3>
+    <h4 style="color: chartreuse;">titolo h4</h4> <!-- Stile in linea -->
+    <h5>titolo h5</h5>
+    <h6>titolo h6</h6>
+    <p> <!--Paragrafo-->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> <!--<br> serve per andare a capo-->
+        Mollitia enim iste, tenetur voluptate, ullam explicabo &nbsp; <!--&nbsp; server per creare uno spazio-->
+        aperiam debitis ad distinctio laudantium ratione placeat.
+        Quam corporis quia sint autem eaque voluptate nam. <br>
+        <b>GRASSETTO</b> <br>
+        <i>Corsivo</i> <br>
+        <del>Testo sbarrato</del> <br>
+        Testo normale<sub>pedice</sub> <br>
+        Testo normale<sup>apice</sup> <br>
+    </p>
+    <hr> <!--Linea orizzontale che separa due sezioni-->
+    <h2 class="titoli">Liste</h2>
+    <ul> <!-- Unordered list -> Elenco puntato -->
+        <li>cane</li> <!-- List Item -> Elemento della lista-->
+        <li>gatto</li>
+        <li>criceto</li>
+    </ul>
+    <ol> <!--Ordered list -> elenco numerato -->
+        <li>primo</li> <!-- List Item -> Elemento della lista-->
+        <li>secondo</li>
+        <li>terzo</li>
+    </ol>
+    <hr>
+    <h2 class="titoli">Tabelle</h2>
+    <table> <!-- Tag che indica che è una tabella-->
+        <thead> <!--Tag che indica che il contenuto sarà l'header della tabella-->
+            <tr> <!-- Tag che indica che è una nuova riga della tabella-->
+                <th>Nome</th> <!--Tag che indica cella di header-->
+                <th>Cognome</th>
+                <th>Genere</th>
+            </tr>
+        </thead>
+        <tbody> <!-- Tag che indica che il contenuto è nel corpo della tabella-->
+            <tr> <!-- Nuova riga della tabella (suddivisione orizzontale)-->
+                <td>Giovanni</td> <!-- Nuova cella della tabella (suddivisione verticale)-->
+                <td>Rossi</td>
+                <td>Uomo</td>
+            </tr>
+            <tr>
+                <td>Elisa</td>
+                <td>Bianchi</td>
+                <td>Donna</td>
+            </tr>
+            <tr>
+                <td>Giovanni</td>
+                <td>Rossi</td>
+                <td>Uomo</td>
+            </tr>
+            <tr>
+                <td>Elisa</td>
+                <td>Bianchi</td>
+                <td>Donna</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2 class="titoli">Links</h2>
+    <a href="http://google.it">Link a google</a> <!-- Collegamento ipertestuale, in href ci va il link, tra apertura e chiusura il testo da visualizzare-->
+    <br>
+    <a href="http://google.it" target="_blank">Link a google esterno</a> <!-- Link interno senza target, link esterno con target blank -->
+    <hr>
+    <h2 class="titoli">Immagine</h2>
+    <img src="https://media-assets.wired.it/photos/65250e824bcd5558b1bf6903/3:2/w_762,h_508,c_limit/nascondere%20immagini%20testo%20foto%20ai.png">
+</body>
+</html>
