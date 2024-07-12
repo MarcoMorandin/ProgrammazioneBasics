@@ -57,10 +57,7 @@ Gli operatori logici sono:
 - **AND**: dipende dal linguaggio utilizzato, solitamente rappresentato come 'and' oppure come '&&'. L'operatore and si basa sulla seguente tabella della verità:
 | Condizione1   | Condizione2    | Condizione3       |
 | ---    | ---   | ---     |
-| VERA | VERA | VERO |  
-| VERA | FALSA | FALSO |  
-| FALSA | VERA | FALSO |  
-| FALSA | FALSA | FALSO |    
+| simple | table | example |
 
 Immaginiamoci la e in italiano: "prendi un quanderno **e** una penna" sarà vera questa cosa solamente se la persona prenderà sia il quaderno che la penna. Allo stesso modo un'espressione di condizioni collegate con l'and sarà vera solo nel caso in cui tutte le condizioni connesse da un and siano vere.
 - **OR**: dipende dal linguaggio utilizzato, solitamente rappresentato come 'or' oppure come '||'. L'operatore or si basa sulla seguente tabella della verità:  
