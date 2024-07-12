@@ -78,3 +78,64 @@ var = var + 5 --> var += 5
 pluto = pluto * 5 --> pluto */ 5
 topolino = topolino - 10 --> topolino -= 10
 
+## Costrutti di selezione
+Sono dei pezzi di codice che ci permettono di effettuare una scelta.  
+Nella maggior parte dei linguaggi ne troviamo di due tipi: l'if e lo switch-case.
+### Costrutto if
+L'if è un costrutto che esegue un set di operazioni solo nel caso in cui la condizione espressa al suo interno risulti vera.
+L'if è strutturato nel seguente modo nella maggior parte dei linguaggi:
+```c
+if(condizione){
+    //Operazioni da effettuare nel caso in cui la condizione sia vera.
+}else{
+    //Operazioni da effettuare nel caso in cui la condizione sia falsa.
+}
+```
+Gli if possono essere annidati uno all'interno dell'altro all'infinito. 
+Esempio:
+```c
+if(condizione1){
+    if(condizione2){
+        if(condizione3){
+        
+        }
+    }else{
+        
+    }
+}else{
+   if(condizione4){
+   
+    }else{
+        
+    }
+}
+```
+### Costrutto switch-case
+Il costrutto switch-case non è presente in tutti il linguaggi ma in c e c++ sì. (Anche  ad esempio in Java, Javascript, Python, PHP)
+Lo switch case verifica comunque una condizine ma molto più semplice in quanto esegue un'operazione in base al valore che assume la variabile che gli si passa.
+Esempio:
+```c
+int variabile = 5;
+
+switch(variabile){
+    case 5:
+        //operazioni da fare nel caso in cui variabile valga 5
+        break; //Parola chiave da evitare, consentita solamente nello switch-case.
+    case 1:
+        //operazioni da fare nel caso in cui  variabile valga 1
+        break;
+    case 2:
+        //operazioni da fare nel caso in cui  variabile valga 2
+        break;
+    case 3:
+    case 4:
+        //operazioni da fare nel caso in cui  variabile valga 3 o 4
+        break;
+    default:
+        //Non obbligatorio esegue queste operazioni nel caso in cui nessuno dei casi precedenti sia stato coperto dalla variabile.
+}
+```
+
+Lo switch case è particolarmente utile quando si chiede all'utente di fare una scelta tra vari elementi come ad esempio un menù.
+
+## Costrutti di iterazione
