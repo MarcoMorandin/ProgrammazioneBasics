@@ -54,7 +54,7 @@ Gli operatori logici sono:
 - **AND**: dipende dal linguaggio utilizzato, solitamente rappresentato come 'and' oppure come '&&'. L'operatore and si basa sulla seguente tabella della verità:
   
 | condizione1 | condizione2 | risultato |  
-| ----------- | ----------- | --------- |  
+| :-----------: | :-----------: | :---------: |  
 | VERA | VERA | VERO |  
 | VERA | FALSA | FALSO |  
 | FALSA | VERA | FALSO |  
@@ -64,11 +64,12 @@ Immaginiamoci la e in italiano: "prendi un quanderno **e** una penna" sarà vera
 - **OR**: dipende dal linguaggio utilizzato, solitamente rappresentato come 'or' oppure come '||'. L'operatore or si basa sulla seguente tabella della verità:
   
 | condizione1 | condizione2 | risultato |  
-| ----------- | ----------- | --------- |  
+| :-----------: | :-----------: | :---------: |  
 | VERA | VERA | VERO |  
 | VERA | FALSA | VERO |  
 | FALSA | VERA | VERO |  
 | FALSA | FALSA | FALSO |  
+
 Immaginiamoci la o in italiano: "prendi un quanderno **o** una penna" sarà vera questa cosa se la persona prenderà anche solo il quaderno o la penna o entrambi. Allo stesso modo un'espressione di condizioni collegate con l'or sarà vera nel caso in cui almeno una delle condizioni connesse con un or sia vera.
 - **NOT**: Operatore logico che agisce su una sola condizione. Qesto operatore è in grado di invertire il risultato trasformando un'espressione falsa in vera e viceversa. In base al linguaggio utilizzato si rappresenta con un '!' o un 'not'. 
   
