@@ -51,6 +51,9 @@ Gli operatori di confronto presenti nella maggior parte dei linguaggi sono:
 #### Operatori Logici
 GLi operatori logici sono degli operatori che vanno a connettere o modificare il significato delle espressioni booleane.
 Gli operatori logici sono:
+| This   | is    | a       |
+| ---    | ---   | ---     |
+| simple | table | example |
 - **AND**: dipende dal linguaggio utilizzato, solitamente rappresentato come 'and' oppure come '&&'. L'operatore and si basa sulla seguente tabella della verità:  
 | condizione1 | condizione2 | risultato |  
 | ----------- | ----------- | --------- |  
