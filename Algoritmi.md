@@ -55,7 +55,7 @@ Gli operatori logici sono:
 | ---    | ---   | ---     |
 | simple | table | example |
 - **AND**: dipende dal linguaggio utilizzato, solitamente rappresentato come 'and' oppure come '&&'. L'operatore and si basa sulla seguente tabella della verità:
-| Condizione1   | Condizione2    | Condizione3       |
+| This   | is    | a       |
 | ---    | ---   | ---     |
 | simple | table | example |
 
