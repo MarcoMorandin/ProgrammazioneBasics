@@ -143,3 +143,75 @@ switch(variabile){
 Lo switch case è particolarmente utile quando si chiede all'utente di fare una scelta tra vari elementi come ad esempio un menù.
 
 ## Costrutti di iterazione
+I costrutti di iterazione sono dei costrutti che ci consentono di andare a ripetere delle porzioni di codice. 
+### Ciclo pre-condizionale
+Il  ciclo pre-condizionale prevede che la condizione di uscita sia verificata prima dell'esecuzione del codice al suo interno. 
+Il ciclo pre-condizionale nella maggior parte dei linguaggi è identificato dalla parola chiave **while**  
+Esempio:
+```c
+while(condizione){
+    //Codice da ripetere
+}
+```
+Il while può essere interpretato con le frase in italiano "Ripeti finchè (condizione) è vera", con questa frase ci aiutiamo a capire quale sarà la condizione da inserire nel while.
+### Ciclo post-condizionale
+Il ciclo post-condizionale prevede che la condizione sia verificata dopo l'esecuzione del condice all'interno del ciclo. Questo costrutto ci è utile quando sappiamo che dovremo eseguire il codice all'interno almeno una volta. (Esempio: _Chiediamo all'utente di inserire un numero finchè non inserisce lo 0._ Vogliamo quindi che l'utente inserisca almeno una cifra prima di andare a verificare ciò che è stato inserito).
+Nella maggio parte dei linguaggi è identificato dalle parole chiave **do-while**.  
+Esempio:  
+```c
+do{
+    //Codice da ripetere
+}while(condizione);
+```
+### For
+Il for è un ciclo particolare che ci consente di andare a ripetere le istruzioni al suo interno un numero predeterminato di volte. 
+Il for è composto nel seguente modo:
+```c
+for(inizializzazione; condizione; incremento){
+    //Codice da eseguire
+}
+```
+- **Inizializzazione**: andiamo a portare il contatore al numero di partenza necessario, operazione eseguita prima dell'esecuzione del codice all'interno delle parentesi graffe solamente una volta. 
+- **Condizione**: istruzione eseguita ad ogni ripetizione prima del codice all'interno delle parentesi graffe. Va a verificare il valore del contatore per eventualmente uscire dal ciclo.
+- **Incremento**: istruzione eseguita ad ogni ripetizione dopo l'esecuzione del codice all'interno delle parentesi. (NB: Non necesariamente un incremento, può essere una qualsiasi istruzione in c, solitamente contatore++, contatore--, constatore += 2, ecc).  
+Il for si utilizza spesso con array e matrici.
+
+### Differenze tra i due while e il for
+I while vengono solitamente utilizzati quando non si conosce il numero esatto di volte per cui ripetere il codice contenuto nel ciclo. Il ciclo for viene utilizzato quando si conosce il numero esatto di volte in cui ripetere il codice al suo interno.
+#### Fare un for con il while
+```c
+for(int contatore = 0; contatore < 10; contatore ++){
+    //Istruzioni da ripetere
+}
+```
+```c
+int contatore = 0;
+while(contatore < 10){
+    //Istruzioni da ripetere
+    contatore++;
+}
+```
+
+#### Fare un do-while con un while
+Scelta poco intelligente ma fattibile.
+Esempio:  Chiediamo all'utente di inserire un numero finchè non inserisce lo 0.
+```c
+int scelta = 0;
+do{
+    printf("Inserire valore");
+    scanf("%d", &scelta);
+}while(scelta != 0) 
+```
+
+Con il while diventerebbe:
+```c
+bool guardia = true;
+int scelta = 0;
+while(guardia == true){
+    printf("Inserire valore");
+    scanf("%d", &scelta);
+    if(scelta == 0){
+        guardia = false;
+    }
+}
+```
